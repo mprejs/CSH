@@ -9,34 +9,155 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="h1">Oferty dealerów</h1>
-      <nav></nav>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 1</div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 2</div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 3</div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 3</div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 3</div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3">
-          <div class="p-3 bg-secondary text-light">auto 3</div>
-        </div>
+      <h1 class="h1 text-uppercase">Oferty dealerów</h1>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile-filters"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobile-filters">
+              <div class="navbar-nav flex-fill">
+                <form class="d-flex flex-column flex-md-row align-content-end">
+                  <div class="flex-fill">
+                    <label
+                      for="available"
+                      class="form-label flex-fill text-uppercase"
+                      >dostępne</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="form-check-inline"
+                      name="avaiable"
+                      id=""
+                    />
+                    <label for="favourite" class="form-label text-uppercase"
+                      >ulubione</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="form-check-inline"
+                      name="favourite"
+                      id=""
+                    />
+                    <label for="gear_box" class="form-label text-uppercase"
+                      >Skrzynia automatyczna</label
+                    >
+                    <input
+                      type="checkbox"
+                      class="form-check-inline"
+                      name="gear_box"
+                      id=""
+                    />
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <select
+                      name="prize"
+                      id=""
+                      class="form-select border-0 p-0 text-uppercase"
+                    >
+                      <option value="1">cena rosnąco</option>
+                      <option value="2">cena malejąco</option>
+                    </select>
+                    <select
+                      name="city"
+                      id=""
+                      class="form-select border-0 p-0 text-uppercase"
+                    >
+                      <option selected>wybierz miasto</option>
+                      <option value="1">miasto 1</option>
+                      <option value="2">miasto 2</option>
+                    </select>
+                    <div class="input-group">
+                      <button
+                        class="btn rounded-0 border border-3 border-dark border-top-0 border-end-0 border-start-0"
+                        type="submit"
+                      >
+                        <i class="bi bi-search"></i>
+                      </button>
+                      <input
+                        class="form-control rounded-0 border border-3 border-dark border-top-0 border-end-0 border-start-0 text-uppercase"
+                        type="search"
+                        placeholder="Szukaj"
+                        aria-label="Search"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
+      <section class="mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-4">
+          <div class="col">
+            <div class="card bg-secondary bg-gradient border-0 rounded-0">
+              <div
+                class="card-header bg-transparent border-0 justify-content-end d-flex"
+              >
+                <button class="btn p-0 m-0 text-white fw-bolder">
+                  <i
+                    class="bi bi-suit-heart"
+                    style="-webkit-text-stroke: 0.5px"
+                  ></i>
+                </button>
+              </div>
+              <div
+                class="card-body text-center justify-content-center p-3 text-light"
+              >
+                <h5 class="h5 card-title text-uppercase">model_details</h5>
+                <h5 class="h5 fw-light card-subtitle text-uppercase">kabina</h5>
+                <p class="card-text">auto 1</p>
+                <img src="" alt="jakieś auto" class="img" />
+                <div class="d-flex justify-content-between">
+                  <span>Rok produkcji</span>
+                  <span class="fw-bolder">modelYear</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>Skrzynia</span>
+                  <span class="fw-bolder">skrzynia_automatyczna</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>Miasto</span>
+                  <span class="fw-bolder">miasto</span>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-baseline"
+                >
+                  <span>Cena netto</span>
+                  <span class="fw-bolder fs-2"
+                    >car_price_disc <span class="fw-light fs-6">zł</span></span
+                  >
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>Cena brutto</span>
+                  <span class="fw-bolder">
+                    total_gross_price <span class="fw-light">zł</span></span
+                  >
+                </div>
+                <a href="#" class="btn rounded-0 px-5 bg-white text-uppercase"
+                  >Zobacz ofertę</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    body body
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
