@@ -1,0 +1,10 @@
+$font-family-sans-serif: "Encode Sans", sans-serif !important;
+
+$form-check-input-border: 3px solid black !important;
+$form-check-input-checked-border-color: 3px solid black !important;
+
+.card-bg {
+  background: linear-gradient(#444, #aaa) !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
